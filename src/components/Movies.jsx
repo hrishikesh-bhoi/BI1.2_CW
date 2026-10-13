@@ -2,7 +2,7 @@ import useFetch from "../useFetch";
 
 const Movies = () => {
 
-    const { data, loading, error } = useFetch(`http://localhost:3000/movies`);
+    const { data, loading, error } = useFetch(`${import.meta.env.VITE_API_URL}/movies`);
 
     console.log(data);
 

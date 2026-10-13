@@ -31,7 +31,7 @@ const AddMovieForm = () => {
         event.preventDefault();
         try {
 
-            const response = await fetch(`http://localhost:3000/movies`, {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/movies`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
